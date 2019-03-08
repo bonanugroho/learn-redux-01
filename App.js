@@ -1,12 +1,11 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-import reducer from './src/store/reducer';
+import store from './src/store/store';
 import CounterApp from './src/CounterApp';
 
-const store = createStore(reducer)
+// const store = createStore(reducer)
 
 export default class App extends React.Component {
   
